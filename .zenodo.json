@@ -1,0 +1,16 @@
+{
+  "upload_type": "dataset",
+  "title": "Criminalidad por municipio en España, 2026T2 (Balance de Criminalidad + Padrón INE 2025)",
+  "creators": [{"name": "Mancera Villa, Javier"}],
+  "description": "<p>Infracciones penales conocidas en 431 municipios españoles de más de 20.000 habitantes y 52 provincias (enero-junio 2026 frente a 2025, ventana de 12 meses y tasas por 1.000 habitantes con el Padrón INE 2025). Datos derivados del Balance de Criminalidad del Ministerio del Interior. Fichas por municipio, rankings y metodología en <a href=\"https://robosporciudad.com\">robosporciudad.com</a>. Fichero vivo: <a href=\"https://robosporciudad.com/datos/espana.csv\">robosporciudad.com/datos/espana.csv</a>.</p><p>Atribución: robosporciudad.com con datos del Ministerio del Interior. Elaboración propia con datos extraídos del sitio web del INE: www.ine.es. Proyecto independiente.</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "spa",
+  "version": "2026T2",
+  "keywords": ["criminalidad", "delitos", "robos", "municipios", "España", "Ministerio del Interior", "INE", "crime statistics", "Spain"],
+  "related_identifiers": [
+    {"identifier": "https://robosporciudad.com/datos", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "https://robosporciudad.com/metodologia", "relation": "isDocumentedBy", "scheme": "url"},
+    {"identifier": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/", "relation": "isDerivedFrom", "scheme": "url"}
+  ]
+}

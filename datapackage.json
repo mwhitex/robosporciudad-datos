@@ -1,0 +1,605 @@
+{
+ "name": "criminalidad-municipios-espana",
+ "title": "Criminalidad por municipio en España, 2026T2",
+ "homepage": "https://robosporciudad.com/datos",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Portal Estadístico de Criminalidad, Ministerio del Interior",
+   "path": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/"
+  },
+  {
+   "title": "INE, Padrón municipal 1-1-2025",
+   "path": "https://www.ine.es"
+  }
+ ],
+ "resources": [
+  {
+   "name": "criminalidad-municipios-espana-2026T2",
+   "path": "data/criminalidad-municipios-espana-2026T2.csv",
+   "format": "csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "nivel",
+      "type": "string"
+     },
+     {
+      "name": "codigo_ine",
+      "type": "string"
+     },
+     {
+      "name": "nombre",
+      "type": "string"
+     },
+     {
+      "name": "provincia",
+      "type": "string"
+     },
+     {
+      "name": "codigo_provincia",
+      "type": "string"
+     },
+     {
+      "name": "poblacion",
+      "type": "number"
+     },
+     {
+      "name": "poblacion_anio",
+      "type": "number"
+     },
+     {
+      "name": "periodo",
+      "type": "string"
+     },
+     {
+      "name": "url_ficha",
+      "type": "string"
+     },
+     {
+      "name": "url_csv",
+      "type": "string"
+     },
+     {
+      "name": "total_casos",
+      "type": "number"
+     },
+     {
+      "name": "total_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "total_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "total_u12m",
+      "type": "number"
+     },
+     {
+      "name": "total_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "total_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "total_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "criminalidad_convencional_casos",
+      "type": "number"
+     },
+     {
+      "name": "criminalidad_convencional_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "criminalidad_convencional_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "criminalidad_convencional_u12m",
+      "type": "number"
+     },
+     {
+      "name": "criminalidad_convencional_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "criminalidad_convencional_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "criminalidad_convencional_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "cibercriminalidad_casos",
+      "type": "number"
+     },
+     {
+      "name": "cibercriminalidad_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "cibercriminalidad_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "cibercriminalidad_u12m",
+      "type": "number"
+     },
+     {
+      "name": "cibercriminalidad_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "cibercriminalidad_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "cibercriminalidad_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "robos_domicilios_casos",
+      "type": "number"
+     },
+     {
+      "name": "robos_domicilios_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "robos_domicilios_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "robos_domicilios_u12m",
+      "type": "number"
+     },
+     {
+      "name": "robos_domicilios_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "robos_domicilios_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "robos_domicilios_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "robos_fuerza_total_casos",
+      "type": "number"
+     },
+     {
+      "name": "robos_fuerza_total_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "robos_fuerza_total_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "robos_fuerza_total_u12m",
+      "type": "number"
+     },
+     {
+      "name": "robos_fuerza_total_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "robos_fuerza_total_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "robos_fuerza_total_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "hurtos_casos",
+      "type": "number"
+     },
+     {
+      "name": "hurtos_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "hurtos_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "hurtos_u12m",
+      "type": "number"
+     },
+     {
+      "name": "hurtos_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "hurtos_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "hurtos_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "robos_violencia_casos",
+      "type": "number"
+     },
+     {
+      "name": "robos_violencia_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "robos_violencia_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "robos_violencia_u12m",
+      "type": "number"
+     },
+     {
+      "name": "robos_violencia_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "robos_violencia_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "robos_violencia_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "sustraccion_vehiculos_casos",
+      "type": "number"
+     },
+     {
+      "name": "sustraccion_vehiculos_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "sustraccion_vehiculos_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "sustraccion_vehiculos_u12m",
+      "type": "number"
+     },
+     {
+      "name": "sustraccion_vehiculos_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "sustraccion_vehiculos_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "sustraccion_vehiculos_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "estafas_informaticas_casos",
+      "type": "number"
+     },
+     {
+      "name": "estafas_informaticas_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "estafas_informaticas_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "estafas_informaticas_u12m",
+      "type": "number"
+     },
+     {
+      "name": "estafas_informaticas_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "estafas_informaticas_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "estafas_informaticas_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "otros_ciberdelitos_casos",
+      "type": "number"
+     },
+     {
+      "name": "otros_ciberdelitos_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "otros_ciberdelitos_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "otros_ciberdelitos_u12m",
+      "type": "number"
+     },
+     {
+      "name": "otros_ciberdelitos_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "otros_ciberdelitos_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "otros_ciberdelitos_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "trafico_drogas_casos",
+      "type": "number"
+     },
+     {
+      "name": "trafico_drogas_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "trafico_drogas_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "trafico_drogas_u12m",
+      "type": "number"
+     },
+     {
+      "name": "trafico_drogas_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "trafico_drogas_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "trafico_drogas_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "lesiones_rina_casos",
+      "type": "number"
+     },
+     {
+      "name": "lesiones_rina_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "lesiones_rina_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "lesiones_rina_u12m",
+      "type": "number"
+     },
+     {
+      "name": "lesiones_rina_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "lesiones_rina_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "lesiones_rina_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "libertad_sexual_casos",
+      "type": "number"
+     },
+     {
+      "name": "libertad_sexual_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "libertad_sexual_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "libertad_sexual_u12m",
+      "type": "number"
+     },
+     {
+      "name": "libertad_sexual_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "libertad_sexual_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "libertad_sexual_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "agresion_sexual_penetracion_casos",
+      "type": "number"
+     },
+     {
+      "name": "agresion_sexual_penetracion_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "agresion_sexual_penetracion_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "agresion_sexual_penetracion_u12m",
+      "type": "number"
+     },
+     {
+      "name": "agresion_sexual_penetracion_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "agresion_sexual_penetracion_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "agresion_sexual_penetracion_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "resto_libertad_sexual_casos",
+      "type": "number"
+     },
+     {
+      "name": "resto_libertad_sexual_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "resto_libertad_sexual_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "resto_libertad_sexual_u12m",
+      "type": "number"
+     },
+     {
+      "name": "resto_libertad_sexual_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "resto_libertad_sexual_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "resto_libertad_sexual_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_consumados_casos",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_consumados_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_consumados_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_consumados_u12m",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_consumados_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_consumados_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_consumados_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_tentativa_casos",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_tentativa_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_tentativa_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_tentativa_u12m",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_tentativa_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_tentativa_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "homicidios_tentativa_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "secuestro_casos",
+      "type": "number"
+     },
+     {
+      "name": "secuestro_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "secuestro_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "secuestro_u12m",
+      "type": "number"
+     },
+     {
+      "name": "secuestro_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "secuestro_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "secuestro_var_pct_u12m",
+      "type": "number"
+     },
+     {
+      "name": "resto_convencional_casos",
+      "type": "number"
+     },
+     {
+      "name": "resto_convencional_casos_anterior",
+      "type": "number"
+     },
+     {
+      "name": "resto_convencional_var_pct",
+      "type": "number"
+     },
+     {
+      "name": "resto_convencional_u12m",
+      "type": "number"
+     },
+     {
+      "name": "resto_convencional_u12m_anterior",
+      "type": "number"
+     },
+     {
+      "name": "resto_convencional_tasa_1000",
+      "type": "number"
+     },
+     {
+      "name": "resto_convencional_var_pct_u12m",
+      "type": "number"
+     }
+    ]
+   }
+  }
+ ]
+}

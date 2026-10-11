@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Si usas estos datos, cítalos así / If you use this dataset, please cite it as below."
+type: dataset
+title: "Criminalidad por municipio en España, 2026T2 (Balance de Criminalidad + Padrón INE 2025)"
+authors:
+  - family-names: "Mancera Villa"
+    given-names: "Javier"
+version: "2026T2"
+date-released: "2026-09-17"
+license: CC-BY-4.0
+url: "https://robosporciudad.com/datos"
+repository-code: "https://github.com/mwhitex/robosporciudad-datos"
+keywords: [criminalidad, delitos, robos, municipios, España, Ministerio del Interior, INE, open data, crime statistics, Spain]
