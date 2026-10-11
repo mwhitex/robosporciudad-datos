@@ -1,0 +1,5 @@
+# robosporciudad.com con datos del Ministerio del Interior. Licencia de este fichero: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+# Origen de los datos: Portal Estadístico de Criminalidad (Ministerio del Interior), balance enero-junio 2026, actualizado el 17/09/2026.
+# Elaboración propia con datos extraídos del sitio web del INE: www.ine.es (Padrón a 1-1-2025).
+# Los datos de 2026 son provisionales y el Ministerio del Interior puede revisarlos. Las cifras de años anteriores se toman del último balance publicado.
+# Periodo: 2026T2 (enero-junio 2026). casos y casos_anterior son el tramo publicado y el mismo tramo del año anterior. u12m es la ventana julio 2025 - junio 2026.
